@@ -1,18 +1,21 @@
-<div class="bg-warning text-center">
-	
+<div class="bg-warning text-center">	
 	<h2>Our products:</h2>
-
-	<div *ngFor="let product of products ; index as productId">
-
-	 <h3>
-	   <a [routerLink]="['/products', productId]">
-	     {{ product.name }}
-	   </a>
-	 </h3>
-	 <p *ngIf="product.description">
-	   Description: {{ product.description }}
-	 </p>
-	 <div><img src="{{ product.image }}" alt="img"></div>
-
+	
+	<div class="row">	
+	
+		<div  class="col-lg-6 col-sm-12" *ngFor="let product of products ; index as productId">
+						
+				 <h3>
+				   <a [routerLink]="['/products', productId]">
+				     {{ product.name }}
+				   </a>
+				 </h3>
+				 <p *ngIf="product.description">
+				   Description: {{ product.description }}
+				 </p>
+				 <div><img src="{{ product.image }}" alt="img"></div>
+					<br>
+		</div>
 	</div>
+
 </div>

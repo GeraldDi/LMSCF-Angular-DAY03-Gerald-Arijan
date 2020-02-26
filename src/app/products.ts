@@ -16,5 +16,11 @@ export const products = [
    price: 29.99,
    description: 'The best dog leash',
    image:'assets/dogleash.jpg'
+ },
+ {
+   name: 'Cat basket',
+   price: 39.99,
+   description: 'The most comfortable cat basket',
+   image:'assets/cat-basket.jpg'
  }
 ];

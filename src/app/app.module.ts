@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProductListComponent,
     NavbarComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

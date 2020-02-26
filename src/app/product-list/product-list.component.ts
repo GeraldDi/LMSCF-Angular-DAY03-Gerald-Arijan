@@ -10,7 +10,7 @@ export class ProductListComponent implements OnInit {
 	products = products;
 
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 
