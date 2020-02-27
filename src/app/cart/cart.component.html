@@ -5,22 +5,30 @@
 <div class="cart-item text-center" *ngFor="let item of items">
  <span>{{ item.name }} </span>
  <span>{{ item.price | currency }}</span>
+ 
 </div>
-
+<div class="text-center">total price: {{ tprice }}</div>
 <form class="text-center" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
  <div>
-   <label for="name">
+   <label for="name" class="ml-1">
      Name:
    </label>
    <input id="name" type="text" formControlName="name">
  </div>
 
  <div>
-   <label for="address" class="ml-n3">
+   <label for="address" class="ml-n2">
      Address:
    </label>
    <input id="address" type="text" formControlName="address">
+ </div>
+
+ <div>
+   <label for="emaila" class="ml-n5">
+     E-mail address:
+   </label>
+   <input id="emaila" type="text" formControlName="emaila">
  </div>
 
  <button class="button ml-3 m-2 mb-3" type="submit">Purchase</button>
